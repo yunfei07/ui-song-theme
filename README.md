@@ -4,7 +4,7 @@ English | [中文](README.zh.md)
 
 A Song-inspired visual theme plugin for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). It contributes a reversible `ThemeRuntime.overrideTokens()` layer with complete light and dark values while preserving the user's `light`, `dark`, or `system` preference.
 
-The light palette combines silk-paper surfaces, warm ink text, Ru-celadon interactions, and cinnabar error states. The dark palette uses night-ink surfaces with a brighter celadon accent. Display headings prefer installed Song and CJK serif fonts; body text keeps the Harness sans-serif stack.
+The light palette combines silk-paper surfaces, warm ink text, botanical gray-green interactions, and cinnabar error states. The dark palette uses pine-ink green-black surfaces with a restrained pale-jade accent. Display headings prefer installed Song and CJK serif fonts; body text keeps the Harness sans-serif stack. The layer also recasts visible legacy blue selections and the browser focus outline into the same botanical color family.
 
 ## Install
 
@@ -21,7 +21,7 @@ For reproducible installations, pin a commit:
 dsh plugin --profile web add github:yunfei07/ui-song-theme#<commit-sha>
 ```
 
-The repository commits its `lib/` artifacts, so a GitHub installation does not need to run a package build script. The bundle adds the `ui-song-theme` client row; its `theme` service injection ensures the base dsh theme is ready before this token layer mounts.
+The repository commits its `lib/` artifacts, so a GitHub installation does not need to run a package build script. The bundle adds a unique `ui-song-theme-external` client row; its `theme` service injection ensures the base dsh theme is ready before this token layer mounts. That row stacks after the Web bundle's built-in theme, and removing the external plugin restores the built-in layer.
 
 Remove it with:
 
@@ -35,7 +35,7 @@ dsh plugin --profile web remove ui-song-theme
 | --- | --- | --- |
 | Base surface | Silk paper | Night ink |
 | Primary text | Warm ink | Pale paper |
-| Accent | Ru celadon | Bright celadon |
+| Accent | Pine botanical green | Restrained pale jade |
 | Error | Cinnabar | Light cinnabar |
 | Geometry | 2 to 12 px semantic radii | Same |
 

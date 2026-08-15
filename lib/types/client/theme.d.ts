@@ -24,6 +24,34 @@ export declare const SONG_THEME_TOKENS: {
         light: string;
         dark: string;
     };
+    '--dsw-static-neutral-bluish-400': {
+        light: string;
+        dark: string;
+    };
+    '--dsw-static-blue-450': {
+        light: string;
+        dark: string;
+    };
+    '--dsw-static-blue-500': {
+        light: string;
+        dark: string;
+    };
+    '--dsw-static-deepseek-50': {
+        light: string;
+        dark: string;
+    };
+    '--dsw-static-deepseek-200': {
+        light: string;
+        dark: string;
+    };
+    '--dsw-static-deepseek-450': {
+        light: string;
+        dark: string;
+    };
+    '--dsw-static-deepseek-500': {
+        light: string;
+        dark: string;
+    };
     '--dsw-alias-bg-base': {
         light: string;
         dark: string;
